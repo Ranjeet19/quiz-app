@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="quiz.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIz Apps</title>
+
+    
+<script>
+    
+    // let replies= [
+    //    new rpl1=(" Right Answer!!"),
+    //     new rpl2=(" Wrong Answer"),
+    // ];
+
+
+
+    // let imopt = replies[slice[1]]
+
+    // let reply=document.createElement("reply")
+    // reply.innerHTML = imopt.normalize
+     
+
+    alert("your answer will be in prompt form")[0];
+    
+
+
+/*
+    function question(){
+        var que;
+         que = Math.floor(Math.random()*3)+1;
+
+        if(que==1){
+            document.querySelector('h2').innerHTML="Opps! Option  is not a right answer";
+            //document.querySelector('h2').innerHTML= "What is the capital of Nepal ?";
+
+        }
+        else if(que==2){
+            document.querySelector('h2').innerHTML="Opps! Option  is not a right answer";
+
+          //  document.querySelector('h2').innerHTML= "which district has the largest population among this ?";
+        }
+
+        else if(que==3){
+            document.querySelector('h2').innerHTML="Opps! Option  is not a right answer";
+
+            //document.querySelector('h2').innerHTML= "Which district is smallest among this  ?";
+        }
+        else{
+            document.querySelector('h2').innerHTML= "Which district is smallest among this  ?";
+
+        }
+    }
+    question();*/
+    
+
+    function myFun(){
+
+
+     var opt;
+     opt=prompt("Choose Your Option.");
+     if(opt==1){
+
+            document.querySelector('h3').innerHTML="Opps! Option " + opt + ". is not a right answer";
+            //alert(opt + ",is not a right answer")
+
+           }
+
+           else if(opt==2){
+            document.querySelector('h3').innerHTML="Opps! Option " + opt + ". is not a right answer";
+               //alert(opt+ ",it is wrong Answer")
+
+           }
+
+           else if(opt==3){
+            document.querySelector('h3').innerHTML="Ohh! Option" +opt +", Congrats its Right answer";
+                //alert(opt +",nice its Right answer")
+           }
+
+           else if(opt==4){
+            document.querySelector('h3').innerHTML="Opps! Option" +opt + ". is not a right answer";
+               //alert(opt+",is wrong answer");
+           }
+           else{
+               //alert("sorry, there is not such a option")
+               document.querySelector('h3').innerHTML= "sorry, there is not such a option";
+           }
+       }
+
+    myFun();
+
+
+    </script>
+    
+</head>
+<body>
+    
+
+   
+
+    <div class="container">
+
+        <h1 class="quiz_title">
+            The Quiz Game
+        </h1>
+
+        <div class="question">
+            <h2 class="que">
+                
+                     What is the Capital of Nepal ?
+                
+            </h2>
+            
+        </div>
+        <div class="answer">
+            <div class="a" >1. Butwal</div>
+            <div class="a" >2. Nuwakot</div>
+            <div class="a" >3.  Kathmandu</div>
+            <div class="a" >4. Jhapa</div>
+        </div>
+
+
+
+        <button onclick="myFun()" class="button_reply" type="submit" placeholder="reply">Reply</button>
+        <h3 class="reply"> BesT oF LucK !!
+        </h3>
+    </div>
+    
+</body>
+
+
+
+
+</html>
